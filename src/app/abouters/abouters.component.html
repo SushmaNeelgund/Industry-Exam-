@@ -1,0 +1,197 @@
+<!-- <div class="container-fluid">
+    <!-- <div  class="text1">
+      <label>open</label>
+      <label class="pull-right"><button class="btn btn-warning btn-sm" (click)="openAddPopup(Addpopup)"></button></label>
+    </div> -->
+  <div class="panel panel-default">
+      <div class="panel-heading"><B></B></div>
+      <table class="table">
+        <thead>
+            <th> Id</th>
+            <th>Organization Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Is Active</th>
+            <!-- <th>Created by</th>
+            <th>Created Date</th>
+            <th>Modified By </th>
+            <th>Modified Date</th>
+            <th>Organization</th> -->
+            <!-- <th>Action</th> -->
+        </thead>
+        <tbody *ngFor="let item of arr">
+            <tr>
+                <td>{{item.Id}}</td>
+                <td>{{item.organizationId}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.isactive}}</td>
+                <td>{{item.createdby}}</td>
+                <td>{{item.createddate}}</td>
+                <td>{{item.modifiedby}}</td>
+                <td>{{item.modifieddate}}</td>
+                <td>{{item.organization}}</td>
+              <td>
+                <button class="btn btn-warning" (click)="openAddPopup(editpopup)">Edit</button>&nbsp;
+                <button class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+  <ng-template #Addpopup let-modal>
+  <h4>Add Article</h4>
+  <form [[formGroup]] = "pop">
+  <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-6">
+          <label><b>Id</b></label>
+          <input formControlName="Id" type="text" class="form-control">
+        </div>
+      </div>
+      </div>
+    <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-6">
+              <label><b>Organization Id</b></label>
+              <input formControlName="organizationId" type="text" class="form-control">
+            </div>
+          </div>
+          </div>
+    <div class="container">
+        <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-6">
+                  <label><b>Name</b></label>
+                  <input formControlName="name" type="text" class="form-control">
+                </div>
+              </div>
+              </div>
+    <div class="container">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-6">
+                      <label><b>Description</b></label>
+                      <input formControlName="description" type="text" class="form-control">
+                    </div>
+                  </div>
+                  </div>
+      <div class="container">
+                      <div class="row">
+                        <div class="col-xs-6 col-sm-4 col-md-6">
+                          <label><b>IsActive</b></label>
+                          <input formControlName="isactive" type="text" class="form-control">
+                        </div>
+                      </div>
+                      </div>
+      <div class="container">
+                          <div class="row">
+                            <div class="col-xs-6 col-sm-4 col-md-6">
+                              <label><b>Created By</b></label>
+
+                              <input formControlName="createdBy" type="text" class="form-control">
+                            </div>
+                          </div>
+                          </div>
+                      <button>Submit</button>
+                      <button>close</button>
+    </form>
+  </ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <button type="button" class="btn btn-primary btn-lg">
+    <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+    </button>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th >Name</th>
+    <th >npiTaxonomyId</th>
+    <th>isUnique</th>
+    <th>Member</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of arr">
+    <td>{{ item.Id }}</td>
+    <td>{{item.Name }}</td>
+    <td>{{item.npiTaxonomyId}}</td>
+    <td>{{item.isUnique}}</td>
+    <td>{{item.member}}</td>
+
+    <td>{{item.image}}</td>
+    <td>{{item.description}}</td>
+    <td>{{item.isActive}}</td>
+
+  </tr>
+  </tbody>
+</table>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h3>EDIT TASK</h3>
+    <button type="button" class="btn btn-danger" (click)="modal.dismiss('Cross click')">Close </button>
+  </div>
+<div class='modal-body'>
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <input class="text" >
+        </div>
+</div>
+</div>
+</ng-template>
+ -->
