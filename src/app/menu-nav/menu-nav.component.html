@@ -1,31 +1,109 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">INDUSTRY</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="/contactus">Contact</a></li>
 
-      </ul>
+<nav class="navbar navbar-expand-lg navbar-info col-sm-12">
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <button class="btn btn-primary" (click)="sidebarclick(visibleSidebar1)"></button>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="hh" ><b>SKYCLIFF IT</b></a> -->
+      </div>
+
+
+
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav">
+            <li  *ngIf="!isLoggedIn()">
+                <a routerLinkActive="active" routerLink="">
+                  <i class="fa fa-login " aria-hidden="true"></i>Login
+                </a>
+              </li><br>
+              <li  *ngIf="isLoggedIn()">
+                  <a routerLinkActive="active" routerLink="">
+                    <i class="fa fa-login "(click)="logout()" aria-hidden="true"></i>Logout
+                  </a>
+                </li><br>
+          <li >
+            <a routerLinkActive="active" routerLink="home">
+              <i class="fa fa-home " aria-hidden="true"></i>Home
+            </a>
+          </li><br>
+
+          <li >
+            <a routerLinkActive="active" routerLink="/Employee">
+              <i class="fa fa-graduation-cap " aria-hidden="true"></i>Employee
+            </a>
+          </li><br>
+          <li >
+            <a routerLinkActive="active" routerLink="/contact">
+              <i class="fa fa-mobile phone " aria-hidden="true"></i>Contact
+            </a>
+          </li><br>
+          <li >
+              <a routerLinkActive="active" routerLink="/About">
+                <i class="fa fa-trophy " aria-hidden="true"></i>AboutUs
+              </a>
+            </li><br>
+            <li >
+              <a routerLinkActive="active" routerLink="/MultiSelect">
+                <i class="fa fa-check " aria-hidden="true"></i>MultiSelect
+              </a>
+            </li><br>
+            <li >
+                <a routerLinkActive="active" routerLink="/CheckBox">
+                  <i class="fa fa-square " aria-hidden="true"></i>CheckBox
+                </a>
+              </li><br>
+
+              <li >
+                <a routerLinkActive="active" routerLink="/treetable">
+                  <i class="fa fa-tree " aria-hidden="true"></i>TreeTable
+                </a>
+              </li><br>
+
+              <li >
+                  <a routerLinkActive="active" routerLink="/syncfusion">
+                    <i class="fa fa-tree " aria-hidden="true"></i>SyncFusion
+                  </a>
+                </li>
+
+        </ul>
+
+        <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"
+        (keyup)="confirmSelection($event)"></rating>
+           <div class="hhh">
+         </div>
+
+
+
+
+              <!-- <pre class="card-block card-header" style="margin:15px 0;"> <b></b> </pre> -->
+          </div>
+
+
+
     </div>
+    <div class="clock">
+        <span class="hour">{{ hours }}:</span>
+        <span class="min">{{ minutes }}:</span>
+        <span class="second">{{ seconds }}</span>
+
+      </div>
+  </nav>
+
   </nav>
 
 
-  <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#"><b>Employee Management System</b></a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li ><a routerLinkActive="active" routerLink="">Home</a></li>
-          <li><a routerLinkActive="active" routerLink="/employee">Employee</a></li>
-          <li><a routerLinkActive="active" routerLink="/aboutus">About Us</a></li>
-          <li><a routerLinkActive="active" routerLink="/contact">Contact Us</a></li>
 
-
-        </ul>
-      </div>
-    </nav>
 

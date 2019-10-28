@@ -1,0 +1,11 @@
+.jiji{
+  background-image:url("src/assets/bubl.jpg");
+  height: 100%;
+  width: 100%;
+    position: absolute;
+    display: block;
+    background-size: cover;
+    background-position: 50% 40%;
+    opacity: 6;
+    z-index: -1;
+}

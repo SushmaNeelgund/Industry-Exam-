@@ -1,0 +1,69 @@
+<app-menu-nav (sidebarnav)="sushma($event)" (toggleEvent)='onToggle($event)'></app-menu-nav>
+<p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000" *ngIf="visibleSidebar1">
+  <a routerLinkActive="active" routerLink="" (click)="sidebar1()">
+    <i class="fa fa-home " aria-hidden="true"></i>&nbsp;
+    <span>{{'Home' | translate}}</span>
+  </a><br>
+
+    <a routerLinkActive="active" routerLink="/Employee" (click)="sidebar1()">
+      <i class="fa fa-graduation-cap " aria-hidden="true"></i>&nbsp;
+      <span>{{'Employee' | translate}}</span>
+    </a><br>
+
+    <a routerLinkActive="active" routerLink="/contact" (click)="sidebar1()">
+      <i class="fa fa-mobile phone " aria-hidden="true"></i>&nbsp;
+      <span>{{'Contact' | translate}}</span>
+    </a><br>
+
+
+      <a routerLinkActive="active" routerLink="/About" (click)="sidebar1()">
+        <i class="fa fa-trophy " aria-hidden="true"></i>&nbsp;
+        <span>{{'AboutUs' | translate}}</span>
+      </a><br>
+
+      <a routerLinkActive="active" routerLink="/MultiSelect" (click)="sidebar1()">
+        <i class="fa fa-check " aria-hidden="true"></i>&nbsp;
+        <span>{{'MultiSelect' | translate}}</span>
+      </a><br>
+
+        <a routerLinkActive="active" routerLink="/checkbox" (click)="sidebar1()">
+          <i class="fa fa-square " aria-hidden="true"></i>&nbsp;
+          <span>{{'CheckBox' | translate}}</span>
+        </a><br>
+
+
+
+        <a routerLinkActive="active" routerLink="/treetable" (click)="sidebar1()">
+          <i class="fa fa-tree " aria-hidden="true"></i>&nbsp;
+          <span>{{'TreeTable' | translate}}</span>
+        </a><br>
+
+        <a routerLinkActive="active" routerLink="/syncfusion" (click)="sidebar1()">
+          <i class="fa fa-chrome " aria-hidden="true"></i>&nbsp;
+          <span>{{'syncfusion' | translate}}</span>
+        </a><br>
+        <br>
+        <br>
+
+
+<!------------------------------- Language --------------------------------->
+
+
+        <div class="nested-menu">
+          <a class="list-group-item" (click)="addExpandClass('languages')" >
+            <span>{{ 'Language' | translate }} <b class="caret"></b></span>
+          </a>
+          <li class="nested" [class.expand]="showMenu === 'languages'">
+            <ul class="submenu">
+              <li><a href="javascript:void(0)" (click)="changeLang('en')">{{ 'English' | translate }}</a></li>
+              <li><a href="javascript:void(0)" (click)="changeLang('fr')">{{ 'French' | translate }}</a></li>
+              <li><a href="javascript:void(0)" (click)="changeLang('de')">{{ 'German' | translate }}</a></li>
+              <li><a href="javascript:void(0)" (click)="changeLang('kan')">{{ 'Kannada' | translate }}</a></li>
+              <li><a href="javascript:void(0)" (click)="changeLang('hindi')">{{ 'Hindi' | translate }}</a></li>
+            </ul>
+          </li>
+        </div>
+
+
+
+</p-sidebar>

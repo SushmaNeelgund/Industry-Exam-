@@ -1,0 +1,28 @@
+{
+    "Id":"ಐಡಿ",
+    "Description":"ವಿವರಣೆ",
+    "Name":"ಹೆಸರು",
+    "Settings": "ಸೆಟ್ಟಿಂಗ್",
+    "Employee": "ಉದ್ಯೋಗಿ",
+    "English": "ಇಂಗ್ಲೀಷ್",
+    "French": "ಫ್ರೆಂಚ್",
+    "German": "ಜರ್ಮನ್",
+    "Kannada": "ಕನ್ನಡ",
+    "Language": "ಭಾಷೆ",
+    "Home":"ಹೋಮ",
+    "Contact":"ಸಂಪರ್ಕಿಸಿ",
+    "AboutUs":"ನಮ್ಮ ಬಗ್ಗೆ",
+    "MultiSelect":"ಬಹು ಆಯ್ಕೆ",
+    "CheckBox":"ಚೆಕ್‌ಬಾಕ್ಸ್",
+    "TreeTable":"ಟ್ರೀ ಟೇಬಲ್",
+    "Delete":"ಅಳಿಸಿಹಾಕು",
+    "Edit":"ಪರಿಷ್ಕರಿಸು",
+    "Add":"ಸೇರಿಸು",
+    "Employee Id":"ಉದ್ಯೋಗಿ ಐಡಿ",
+    "Employee Name":"ಉದ್ಯೋಗಿ ಹೆಸರು",
+    "Departement":"ವಿಭಾಗ",
+    "Action":"ಕ್ರಿಯೆ",
+    "Search Employee":"ಉದ್ಯೋಗಿ ಹುಡುಕಾಡು",
+    "id":"ಐಡಿ"
+
+}

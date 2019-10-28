@@ -1,0 +1,24 @@
+{
+  "Settings": "ಸೆಟ್ಟಿಂಗ್",
+  "Employee": "कर्मचारी",
+  "English": "अंग्रेज़ी",
+  "French": "फ्रेंच",
+  "German": "जर्मन",
+  "Kannada": "कन्नड़",
+  "Language": "भाषा",
+  "Home":"घर",
+  "Contact":"संपर्क",
+  "AboutUs":"ನಮ್ಮ ಬಗ್ಗೆ",
+  "MultiSelect":"बहु का चयन करें",
+  "CheckBox":"चेक बॉक्स",
+  "TreeTable":"ಟ್ರೀ ಟೇಬಲ್",
+  "Delete":"हटाना",
+  "Edit":"संपादित करें",
+  "Add":"जोड़ना",
+  "Employee Id":"कर्मचारी आईडी",
+  "Employee Name":"कर्मचारी का नाम",
+  "Departement":"डिपामेंट",
+  "Action":"कार्य",
+  "Search Employee":"कर्मचारी खोजें"
+
+}

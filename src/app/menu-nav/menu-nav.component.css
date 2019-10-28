@@ -1,0 +1,23 @@
+.clock {
+  font-size: 5rem;
+  color: lightslategray;
+}
+
+.container-fluid {
+  background-color: black;
+}
+
+rating.ng-untouched.ng-valid.ng-dirty {
+  color: darkgray;
+  margin-left: 602px;
+  font-size:x-large;
+}
+
+.hhh {
+  font-size: large;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-color:white;
+}
+nav.navbar.navbar-inverse {
+  width: 100%;
+}
