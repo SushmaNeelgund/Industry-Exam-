@@ -1,3 +1,4 @@
+
 export class deletedata {
   public constructor(
   public id: number,
