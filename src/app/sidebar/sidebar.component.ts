@@ -14,7 +14,7 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
   }
-  sushma() {
+  sidebarhide() {
     this.visibleSidebar1 = true;
   }
 onToggle() {
@@ -28,7 +28,7 @@ onToggle() {
     }
   }
   sidebar1() {
-    this.visibleSidebar1=false;
+    this.visibleSidebar1 = false;
   }
   changeLang(language: string) {
     this.translate.use(language);

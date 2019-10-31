@@ -1,5 +1,5 @@
 
-<app-menu-nav (sidebarnav)="sushma($event)" (toggleEvent)='onToggle($event)'></app-menu-nav>
+<app-menu-nav (sidebarnav)="sidebarhide($event)" (toggleEvent)='onToggle($event)'></app-menu-nav>
 <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000" *ngIf="visibleSidebar1">
   <a routerLinkActive="active" routerLink="" (click)="sidebar1()">
     <i class="fa fa-home " aria-hidden="true"></i>&nbsp;
@@ -47,10 +47,10 @@
         <br>
 
 
-<!------------------------------- Language --------------------------------->
+<!-- ----------------------------- Language ------------------------------- -->
 
 
-        <div class="nested-menu" >
+        <!-- <div class="nested-menu" >
           <a class="list-group-item" (click)="addExpandClass('languages')" >
             <span>{{ 'Language' | translate }} <b class="caret"></b></span>
           </a>
@@ -64,7 +64,7 @@
               <li><a href="javascript:void(0)" (click)="changeLang('hindi')">{{ 'Hindi' }}</a></li>
             </ul>
           </li>
-        </div>
+        </div> -->
 
 
 

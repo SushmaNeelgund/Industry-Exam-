@@ -1,4 +1,5 @@
 export class Employee {
+  year: any;
   public constructor(
   public id: number,
   public organizationId: number,

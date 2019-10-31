@@ -72,6 +72,9 @@ import {
 import { ButtonModule } from "@syncfusion/ej2-angular-buttons";
 import { DropDownListAllModule } from "@syncfusion/ej2-angular-dropdowns";
 import { DialogModule } from "primeng/primeng";
+import { ExportComponent } from './export/export.component';
+import { TableModule } from 'primeng/table';
+import { TabViewModule } from 'primeng/components/tabview/tabview';
 
 @NgModule({
   declarations: [
@@ -88,7 +91,8 @@ import { DialogModule } from "primeng/primeng";
     TreetableComponent,
     SidebarComponent,
     LoginComponent,
-    SyncfusionComponent
+    SyncfusionComponent,
+    ExportComponent
 
     // ConfirmationDialog
   ],
@@ -149,7 +153,9 @@ import { DialogModule } from "primeng/primeng";
     TreeGridModule,
     ButtonModule,
     DropDownListAllModule,
-    DialogModule
+    DialogModule,
+    TableModule,
+    TabViewModule
   ],
   providers: [
     ConfirmationDialogService,

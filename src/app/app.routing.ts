@@ -9,6 +9,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { TreetableComponent } from './treetable/treetable.component';
 import { LoginComponent } from './login/login.component';
 import { SyncfusionComponent } from './syncfusion/syncfusion.component';
+import { ExportComponent } from './export/export.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'MultiSelect', component: MultiSelectComponent},
   {path: 'CheckBox', component: CheckboxComponent},
   {path: 'treetable', component: TreetableComponent},
-  {path: 'syncfusion', component: SyncfusionComponent}
+  {path: 'syncfusion', component: SyncfusionComponent},
+  {path:'exporting',component:ExportComponent}
 
 ];
 

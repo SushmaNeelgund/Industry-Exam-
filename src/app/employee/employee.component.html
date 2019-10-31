@@ -1,14 +1,12 @@
-
-      <div class="images"></div>
+ <div class="images"></div>
 <div>
-
 &nbsp;&nbsp;
 
   <mat-form-field>
     <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
   </mat-form-field>
 
-  <table  mat-table [dataSource]="dataSource" class="table table-striped table-dark">
+  <table  mat-table [dataSource]="dataSource" class="table table-striped table-dark"      >
 
 
       <ng-container matColumnDef="select">

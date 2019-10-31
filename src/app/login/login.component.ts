@@ -1,12 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
-import { EmployeedataService } from '../employeedata.service';
-import { Router } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import {
+  FormGroup,
+  FormBuilder,
+  FormControl,
+  Validators
+} from "@angular/forms";
+import { EmployeedataService } from "../employeedata.service";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: "app-login",
+  templateUrl: "./login.component.html",
+  styleUrls: ["./login.component.css"]
 })
 export class LoginComponent implements OnInit {
   login: FormGroup;
@@ -15,13 +20,12 @@ export class LoginComponent implements OnInit {
     private fb: FormBuilder,
     private _data: EmployeedataService,
     private _router: Router
-  ) { }
+  ) {}
 
   ngOnInit() {
-
     this.login = this.fb.group({
-      user_email: new FormControl(null,Validators.required),
-      user_password: new FormControl(null,Validators.required)
+      user_email: new FormControl(null, Validators.required),
+      user_password: new FormControl(null, Validators.required)
     });
   }
   onLoginSubmit() {
@@ -35,6 +39,4 @@ export class LoginComponent implements OnInit {
       this._router.navigate(["/home"]);
     }
   }
-
-
 }
